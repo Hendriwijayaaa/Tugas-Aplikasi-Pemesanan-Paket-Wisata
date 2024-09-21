@@ -186,3 +186,26 @@
     </div>
 </div>
 
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p><strong>Harga:</strong> <span id="modalPrice"></span></p>
+        <p><strong>Durasi:</strong> <span id="modalDuration"></span></p>
+        <p><strong>Deskripsi:</strong> <span id="modalDescription"></span></p>
+        <input type="date" class="input-date" id="bookingDate" placeholder="Tanggal Pemesanan">
+        <input type="number" class="input-number" id="numberOfParticipants" placeholder="Jumlah Peserta" min="1">
+        <button class="btn" onclick="confirmBooking()">Konfirmasi Pemesanan</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy;Pemesanan Paket Wisata</p>
+</footer>
+
+<script>
+    function openModal(button) {
+        const packageData = JSON.parse(button.parentElement.getAttribute('data-package'));
+        document.getElementById('modalTitle').innerText = packageData.name;
+        document.getElementById('modalPrice').innerText = packageData.price;
+        document.getElementBy

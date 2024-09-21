@@ -137,4 +137,52 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aplikasi Pemesanan Paket Wisata</h1>
+</header>
+
+<div class="container">
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Cari paket wisata..." oninput="filterPackages()">
+        <button onclick="filterPackages()">Cari</button>
+    </div>
     
+    <h2>Paket Wisata Tersedia</h2>
+
+    <div id="packages">
+        <div class="category">Budaya</div>
+        <div class="package" data-package='{"name": "Paket Wisata Bali", "price": "Rp 3.500.000", "duration": "5 Hari 4 Malam", "description": "Nikmati keindahan Bali dengan berbagai aktivitas menarik.", "rating": 4.5}'>
+            <h2>Paket Wisata Bali</h2>
+            <p class="rating">Rating: ★★★★☆</p>
+            <p><strong>Harga:</strong> Rp 3.500.000</p>
+            <p><strong>Durasi:</strong> 5 Hari 4 Malam</p>
+            <p><strong>Deskripsi:</strong> Nikmati keindahan Bali dengan berbagai aktivitas menarik.</p>
+            <button class="btn" onclick="openModal(this)">Pesan Sekarang</button>
+        </div>
+
+        <div class="category">Alam</div>
+        <div class="package" data-package='{"name": "Paket Wisata Yogyakarta", "price": "Rp 2.500.000", "duration": "3 Hari 2 Malam", "description": "Eksplorasi budaya dan keindahan alam Yogyakarta.", "rating": 4.0}'>
+            <h2>Paket Wisata Yogyakarta</h2>
+            <p class="rating">Rating: ★★★★☆</p>
+            <p><strong>Harga:</strong> Rp 2.500.000</p>
+            <p><strong>Durasi:</strong> 3 Hari 2 Malam</p>
+            <p><strong>Deskripsi:</strong> Eksplorasi budaya dan keindahan alam Yogyakarta.</p>
+            <button class="btn" onclick="openModal(this)">Pesan Sekarang</button>
+        </div>
+
+        <div class="category">Petualangan</div>
+        <div class="package" data-package='{"name": "Paket Wisata Raja Ampat", "price": "Rp 5.000.000", "duration": "7 Hari 6 Malam", "description": "Menyelami keindahan bawah laut Raja Ampat.", "rating": 5.0}'>
+            <h2>Paket Wisata Raja Ampat</h2>
+            <p class="rating">Rating: ★★★★★</p>
+            <p><strong>Harga:</strong> Rp 5.000.000</p>
+            <p><strong>Durasi:</strong> 7 Hari 6 Malam</p>
+            <p><strong>Deskripsi:</strong> Menyelami keindahan bawah laut Raja Ampat.</p>
+            <button class="btn" onclick="openModal(this)">Pesan Sekarang</button>
+        </div>
+    </div>
+</div>
+

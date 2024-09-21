@@ -4,4 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikasi Pemesanan Paket Wisata</title>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6; /* Latar belakang abu-abu muda */
+        }
+        header {
+            background-color: #0072c6; /* Biru */
+            color: white; /* Putih */
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        .search-container {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .search-container input {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-container button {
+            padding: 10px;
+            background-color: #0072c6; /* Biru */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .search-container button:hover {
+            background-color: #00509e; /* Biru lebih gelap */
+        }
+        .category {
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #0072c6;
+        }
+        .package {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #e6f7ff; /* Latar belakang paket */
+            transition: transform 0.3s;
+            position: relative;
+        }
+        .package:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .package h2 {
+            margin-top: 0;
+            color: #0072c6; /* Biru */
+        }
+        .rating {
+            color: #FFD700; /* Warna emas */
+        }
+        .btn {
+            background-color: #0072c6;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #00509e; /* Biru lebih gelap */
+        }
+       
